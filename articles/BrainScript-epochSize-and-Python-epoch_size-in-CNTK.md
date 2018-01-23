@@ -19,7 +19,7 @@ The number of **label** samples (tensors along a dynamic axis) in each epoch. Th
 * learning-rate control
 * minibatch-scaling
 
-Note that the definition of the number of label samples is similar to the number of samples used for [minibatchSize (minibatch_size_in_samples)](./BrainScript-minibatchSize-and-Python-minibatch_size_in_samples-in-CNTK.md). The definition of `epochSize` differs from the definition of `minitbatchSize` in the sense that `epochSize` is **label** samples, not input samples.
+Note that the definition of the number of label samples is similar to the number of samples used for [minibatchSize (minibatch_size_in_samples)](./BrainScript-minibatchSize-and-Python-minibatch_size_in_samples-in-CNTK.md). The definition of `epochSize` differs from the definition of `minibatchSize` in the sense that `epochSize` is **label** samples, not input samples.
 
 So, importantly, for sequential data, a sample is an individual item of a sequence.
 Hence, CNTK's `epochSize` does *not* refer to a number of *sequences*,
